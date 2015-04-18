@@ -3,6 +3,7 @@
 
 ## Loading and preprocessing the data
 
+<<<<<<< HEAD
 Set argument names
 
 ```r
@@ -66,10 +67,13 @@ Change the date column from a factor into a POSIXct date.
 ```r
 ad$date <- as.POSIXct(ad$date)
 ```
+=======
+>>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
 
 
 ## What is mean total number of steps taken per day?
 
+<<<<<<< HEAD
 **1. Calculate the total number of steps taken per day**
 
 ```r
@@ -108,10 +112,13 @@ median1
 ```
 ## [1] 10765
 ```
+=======
+>>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
 
 
 ## What is the average daily activity pattern?
 
+<<<<<<< HEAD
 **1. Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis).**
 
 First calculate the average total steps taken per interval.
@@ -383,3 +390,8 @@ ggplot(adIntervalMean2, aes(x=interval, y=avgStepsPerInterval)) +
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-29-1.png) 
+
+
+
+
+

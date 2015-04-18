@@ -57,7 +57,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
-<p>Set argument names</p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD Set argument names</p>
 <pre class="r"><code>fileDownloaded &lt;- &quot;activity.zip&quot;
 data_file &lt;- &quot;activity.csv&quot;</code></pre>
 <p>Load the required libraries.</p>
@@ -86,10 +86,11 @@ sprintf(&quot;NAs in full dataset: %d, %2.2f%%&quot;, naCnt, (naCnt * 100)/nrow(
 <pre class="r"><code>ad &lt;- tbl_df(ad)</code></pre>
 <p>Change the date column from a factor into a POSIXct date.</p>
 <pre class="r"><code>ad$date &lt;- as.POSIXct(ad$date)</code></pre>
+<p>======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; 80edf39c3bb508fee88e3394542f967dd3fd3270</p>
 </div>
 <div id="what-is-mean-total-number-of-steps-taken-per-day" class="section level2">
 <h2>What is mean total number of steps taken per day?</h2>
-<p><strong>1. Calculate the total number of steps taken per day</strong></p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD <strong>1. Calculate the total number of steps taken per day</strong></p>
 <pre class="r"><code>adTotal1 &lt;- ad %&gt;%
     group_by(date) %&gt;% 
     select(steps, date, interval) %&gt;%
@@ -104,10 +105,11 @@ mean1</code></pre>
 <pre class="r"><code>median1 &lt;- median(adTotal1$stepsPerDay, na.rm=TRUE)
 median1</code></pre>
 <pre><code>## [1] 10765</code></pre>
+<p>======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; 80edf39c3bb508fee88e3394542f967dd3fd3270</p>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">
 <h2>What is the average daily activity pattern?</h2>
-<p><strong>1. Make a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis).</strong></p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD <strong>1. Make a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis).</strong></p>
 <p>First calculate the average total steps taken per interval.</p>
 <pre class="r"><code>adIntervalTotal1 &lt;- ad %&gt;%
     group_by(interval) %&gt;% 
